@@ -1,0 +1,9 @@
+---
+- name: test chocolatey with ansible
+  hosts: palani
+  tasks:
+    - name: copy
+      win_copy:
+        src: C:\Users\Interview\Documents\Windows-playbook-module
+        dest: C:\Users\Admatic\Documents
+        remote_src: True

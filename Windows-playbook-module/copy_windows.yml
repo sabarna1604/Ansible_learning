@@ -1,0 +1,8 @@
+---
+- name: test chocolatey with ansible
+  hosts: palani
+  tasks:
+    - name: copy
+      win_copy:
+        src: /home/admatic/ansible-book/Sabarna_Ansible_Learning/ReadMe/Ansible_Windows_ReadMe/Windows-playbook-module
+        dest: C:\Users\Interview\Documents

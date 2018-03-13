@@ -1,0 +1,9 @@
+---
+- name: test copy module with ansible
+  hosts: palani
+  tasks:
+    - name: copy
+      win_copy:
+        src: C:\Users\Admatic\Downloads\dataset\testing\0
+        dest: /home/admatic/ansible-book/ansible
+        remote_src: True

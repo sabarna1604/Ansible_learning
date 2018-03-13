@@ -1,0 +1,8 @@
+---
+- name: test fetch with ansible
+  hosts: windows
+  tasks:
+      - name : fetch module
+        fetch:
+         src: C:\Users\Interview\Documents\Windows-playbook-module\hosts
+         dest: /home/admatic/ansible-book/ansible

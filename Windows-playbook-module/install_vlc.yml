@@ -1,0 +1,8 @@
+---
+- name: test chocolatey with ansible
+  hosts: windows
+  tasks:
+    - name: Install vlc
+      win_chocolatey:
+        name: vlc 
+        state: present

@@ -1,0 +1,7 @@
+---
+- name: test ping with ansible
+  hosts: all 
+  tasks:
+      - name: Ping
+        win_ping:
+
